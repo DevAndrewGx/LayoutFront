@@ -10,11 +10,10 @@ body {
     background-color: #1a1a1a;
 }
 
-section { 
+section {
     width: 90%;
     /* Limitamos el ancho para que no se dañe el diseño */
     max-width: 1600px;
-    height: 630px;
     /* border: 1px solid #fff; */
     /* con auto se extendera lo que sobra de la pantalla */
     margin: 120px auto;
@@ -25,7 +24,7 @@ section {
     display: flex;
 }
 
-#image { 
+#image {
     width: 35%;
 
 }
@@ -46,7 +45,7 @@ section {
 #content h1 {
     color: #fff;
     font-size: 56px;
-    font-weight:  700;
+    font-weight: 700;
     font-family: 'Fugaz One', cursive;
     margin-top: 0;
     margin-bottom: 0;
@@ -81,6 +80,116 @@ article ul li {
     margin-bottom: 10px;
 }
 
-#content #social-media a{
+#content #social-media a {
     margin: 0px 10px;
+}
+
+#image img {
+    width: 100%;
+}
+
+ul { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Phone */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    #row {
+        display: block;
+        text-align: center;
+    }
+
+    #image {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #content {
+        width: 98%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    section {
+        margin: 50px auto;
+    }
+
+    #content h1 {
+        font-size: 25px;
+    }
+
+    #content h2 { 
+        font-size: 20px;
+    }
+
+    #content #detail {
+        margin: 10px auto;
+    }
+
+    article ul li {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    article ul { 
+        padding: 10px;
+    }
+
+    #content article { 
+        width: 100%;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 990px) {
+
+    /* display block organizes like type colum */
+    #row {
+        display: block;
+        text-align: center;
+    }
+
+    #image {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #content {
+        width: 98%;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    section {
+        margin: 50px auto;
+    }
+
+    #content h1 {
+        font-size: 35px;
+    }
+
+    #content #detail {
+        margin: 10px auto;
+    }
+
+    article ul li {
+        font-size: 18px;
+    }
+    #content article { 
+        width: 100%;
+    }
+}
+
+/* Ipad */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+    #content h1 {
+        font-size: 40px;
+    }
+
+    #content p {
+        font-size: 18px;
+    }
 }

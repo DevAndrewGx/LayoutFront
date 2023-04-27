@@ -1,0 +1,67 @@
+/* box-model 
+    - margin
+    - border
+    - padding
+    - content
+    - display: bloc: is for default
+*/
+
+/* ejex perpendicular al ejex
+    ejey justyficontent
+    
+    space-around suma los valores de los lados
+    para genera espaciado
+
+    space-bewteen lo pone a los extremos
+
+    space-evenly calcula y pone las mismas medidas
+    
+    */
+h2 {
+   text-align: center; 
+}
+#row {
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;/*ejex */
+    align-items: flex-start; /*ejey */
+    flex-wrap: wrap; /*it's useful the elements are wrapped */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.card {
+    width: 18%;
+    height: 200px;
+    background: #fff;
+    box-shadow: 0px 2px 3px 1px #999;
+    padding: 30px; 
+    border-radius: 8px ;
+    max-width: 300px;
+}
+
+.card i { 
+    font-size: 50px;
+    color: #13a2fb;
+}
+
+.card h3 {
+    margin: 6px 0;
+    font-size: 30px;
+}
+
+/* table */
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .card {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+}
+
+/* phone */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

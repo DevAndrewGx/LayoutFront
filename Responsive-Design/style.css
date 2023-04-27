@@ -64,5 +64,20 @@ footer {
 @media screen and (max-width:768px) {
     #caja{
         background: #000;
+        border: 2px solid yellow;
+    }
+}
+
+/* Bewteen 800px and 1300px color is red */
+@media screen and (min-width: 769px) and (max-width: 1300px) { 
+    #caja{ 
+        background-color: red;
+       
+    }
+}
+
+@media screen and (min-width: 1301px){
+    #caja {
+        background-color: blue;
     }
 }
